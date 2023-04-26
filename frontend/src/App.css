@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #dedad9;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 650px;
+  height: 350px;
+  padding: 30px;
+  min-height: 150px;
+  border-radius: 10px !important;
+}
+
+.task_container {
+  width: 100%;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.task {
+  flex-grow: 1;
+  line-break: auto;
+  margin-left: 10px;
+}
+
+.line_trough {
+  text-decoration: line-through;
+}
