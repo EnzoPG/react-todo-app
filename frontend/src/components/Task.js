@@ -61,15 +61,6 @@ class Task extends Component {
     e.preventDefault();
     const originalTasks = this.state.tasks;
 
-    if (!e.target.value) {
-      return this.setState({
-        msgError: {
-          severity: 'warning',
-          msg: 'Please type something!'
-        }
-      });
-    }
-
     try {
       const { data } = await createTask({
         title: this.state.currTask,
